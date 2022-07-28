@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import Splash from '@/components/Splash.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Splash />
   </main>
 </template>

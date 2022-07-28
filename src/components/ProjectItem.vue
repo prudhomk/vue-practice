@@ -1,36 +1,30 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
+  <div class="project">
+    <h2 class="title">
+      <slot name="title"></slot>
+    </h2>
     <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
+      <p>
+        <slot name="description"></slot>
+      </p>
       <slot></slot>
     </div>
   </div>
 </template>
 
 <style scoped>
-.item {
+.project {
   margin-top: 2rem;
   display: flex;
+}
+
+.title {
+  text-decoration: bold;
 }
 
 .details {
   flex: 1;
   margin-left: 1rem;
-}
-
-i {
-  display: flex;
-  place-items: center;
-  place-content: center;
-  width: 32px;
-  height: 32px;
-
-  color: var(--color-text);
 }
 
 h3 {
